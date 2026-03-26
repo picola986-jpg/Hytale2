@@ -1,7 +1,7 @@
 // ============================================
 // CONFIGURATION - Change these values
 // ============================================
-const OGADS_LOCKER_URL = "YOUR_OGADS_LOCKER_LINK_HERE";
+const OGADS_LOCKER_URL = "https://appchecker.site/cl/i/qnnp8w";
 
 // ============================================
 // STATE
