@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hytale - Get Your Free Game Key</title>
+  <meta name="description" content="Get a free Hytale game key. Choose your edition and unlock instant access to the adventure.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700;800&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ====== NAVBAR ====== -->
+  <nav class="navbar">
+    <div class="container navbar-inner">
+      <div class="logo">
+        <img src="img/logo-h.webp" alt="Hytale" class="logo-icon" width="36" height="44">
+        <span class="logo-text">Hytale<span class="logo-accent"> Keys</span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ====== MAIN WRAPPER ====== -->
+  <main class="main">
+
+    <!-- ====== STEP 1: HERO ====== -->
+    <section class="step step-hero active" id="step-hero">
+      <div class="hero-bg">
+        <picture>
+          <source media="(max-width: 1024px)" srcset="img/hero-bg-mobile.jpg">
+          <img src="img/hero-bg.jpg" alt="" class="hero-bg-img" aria-hidden="true">
+        </picture>
+        <div class="hero-overlay"></div>
+      </div>
+      <!-- Floating particles -->
+      <canvas class="particles-bg" id="particles-canvas" aria-hidden="true"></canvas>
+
+      <div class="container hero-content">
+        <img src="img/logo.webp" alt="Hytale" class="hero-logo">
+        <h1 class="hero-title">Get Your Free <span class="text-gradient">Game Key</span></h1>
+        <p class="hero-subtitle">Unlock the full adventure — explore, build, and fight in a limitless block game world. No purchase required.</p>
+
+        <!-- Live stats ticker -->
+        <div class="hero-stats">
+          <div class="hero-stat-pill">
+            <span class="stat-icon">&#9876;</span>
+            <span id="stat-keys-today">307</span> keys claimed today
+          </div>
+          <div class="hero-stat-pill">
+            <span class="stat-dot"></span>
+            <span id="stat-online">31,431</span> adventurers online
+          </div>
+        </div>
+
+        <button class="btn btn-primary btn-lg btn-pulse" id="btn-get-started">
+          Get Started
+          <svg class="btn-arrow" viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg>
+        </button>
+
+        <!-- Countdown timer -->
+        <div class="countdown-wrap">
+          <p class="countdown-label">Limited batch expires in</p>
+          <div class="countdown" id="countdown">
+            <div class="countdown-block"><span class="countdown-digit" id="cd-hours">02</span><span class="countdown-unit">HRS</span></div>
+            <div class="countdown-sep">:</div>
+            <div class="countdown-block"><span class="countdown-digit" id="cd-mins">47</span><span class="countdown-unit">MIN</span></div>
+            <div class="countdown-sep">:</div>
+            <div class="countdown-block"><span class="countdown-digit" id="cd-secs">33</span><span class="countdown-unit">SEC</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== STEP 2: PLAN SELECT ====== -->
+    <section class="step step-plans" id="step-plans">
+      <div class="container">
+        <h2 class="step-title">Choose Your Edition</h2>
+        <p class="step-desc">All editions are completely free with our generator.</p>
+
+        <div class="plans-grid">
+          <!-- Standard -->
+          <div class="plan-card rarity-common" data-plan="standard" data-rarity="common">
+            <div class="plan-badge rarity-badge-common">COMMON</div>
+            <div class="plan-card-img">
+              <img src="img/card-standard.png" alt="Standard Edition">
+            </div>
+            <div class="plan-card-body">
+              <h3 class="plan-name">Standard</h3>
+              <div class="plan-price">
+                <span class="plan-price-old">$29.99</span>
+                <span class="plan-price-new">FREE</span>
+              </div>
+              <ul class="plan-features">
+                <li>Full game access</li>
+                <li>Adventure mode</li>
+                <li>Online multiplayer</li>
+                <li>Community servers</li>
+              </ul>
+              <button class="btn btn-select">Select Edition</button>
+            </div>
+          </div>
+
+          <!-- Deluxe -->
+          <div class="plan-card rarity-epic" data-plan="deluxe" data-rarity="epic">
+            <div class="plan-badge rarity-badge-epic">EPIC</div>
+            <div class="plan-card-img">
+              <img src="img/card-deluxe.png" alt="Deluxe Edition">
+            </div>
+            <div class="plan-card-body">
+              <h3 class="plan-name">Deluxe</h3>
+              <div class="plan-price">
+                <span class="plan-price-old">$49.99</span>
+                <span class="plan-price-new">FREE</span>
+              </div>
+              <ul class="plan-features">
+                <li>Everything in Standard</li>
+                <li>Exclusive character skins</li>
+                <li>Bonus mini-games</li>
+                <li>Early access content</li>
+              </ul>
+              <button class="btn btn-select">Select Edition</button>
+            </div>
+          </div>
+
+          <!-- Founder's Edition -->
+          <div class="plan-card rarity-legendary" data-plan="founders" data-rarity="legendary">
+            <div class="plan-badge rarity-badge-legendary">LEGENDARY</div>
+            <div class="plan-card-img">
+              <img src="img/card-founders.png" alt="Founder's Edition">
+            </div>
+            <div class="plan-card-body">
+              <h3 class="plan-name">Founder's Edition</h3>
+              <div class="plan-price">
+                <span class="plan-price-old">$79.99</span>
+                <span class="plan-price-new">FREE</span>
+              </div>
+              <ul class="plan-features">
+                <li>Everything in Deluxe</li>
+                <li>Founder's badge &amp; title</li>
+                <li>Soundtrack &amp; art book</li>
+                <li>Lifetime season pass</li>
+              </ul>
+              <button class="btn btn-select">Select Edition</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== STEP 3: USERNAME INPUT ====== -->
+    <section class="step step-connect" id="step-connect">
+      <div class="container">
+        <div class="connect-card game-panel">
+          <img src="img/logo-h.webp" alt="" class="connect-logo" width="64" height="78">
+          <h2 class="step-title">Create Your Account</h2>
+          <p class="step-desc">Set up your account to receive your free game key.</p>
+
+          <div class="input-group">
+            <label for="email-input" class="input-label">EMAIL</label>
+            <input
+              type="email"
+              id="email-input"
+              class="input"
+              placeholder="Enter your email address..."
+              autocomplete="off"
+              spellcheck="false"
+            >
+          </div>
+
+          <div class="input-group">
+            <label for="username-input" class="input-label">USERNAME</label>
+            <input
+              type="text"
+              id="username-input"
+              class="input"
+              placeholder="Choose a username..."
+              autocomplete="off"
+              spellcheck="false"
+            >
+            <p class="input-error" id="input-error" aria-live="polite"></p>
+          </div>
+
+          <div class="selected-plan-tag" id="selected-plan-tag"></div>
+
+          <!-- Server status indicators -->
+          <div class="server-status" id="server-status">
+            <div class="status-line" data-delay="0"><span class="status-check">&#10003;</span> Hytale servers: <strong>Online</strong></div>
+            <div class="status-line" data-delay="1"><span class="status-check">&#10003;</span> Key pool: <strong>Available</strong></div>
+            <div class="status-line" data-delay="2"><span class="status-diamond">&#9670;</span> Queue position: <strong id="queue-position">47</strong></div>
+          </div>
+
+          <button class="btn btn-primary btn-lg" id="btn-connect">
+            <svg class="btn-icon" viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zM12 17c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1s3.1 1.39 3.1 3.1v2z"/></svg>
+            Generate Key
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== STEP 4: PROGRESS ====== -->
+    <section class="step step-progress" id="step-progress">
+      <div class="container">
+        <div class="progress-card game-panel">
+          <!-- Shield logo replaces spinner -->
+          <div class="progress-shield" aria-hidden="true">
+            <img src="img/logo-h.webp" alt="" width="64" height="78">
+          </div>
+
+          <h2 class="progress-title" id="progress-title">Entering the Gate...</h2>
+
+          <!-- Dungeon room tracker -->
+          <div class="dungeon-tracker" id="dungeon-tracker">
+            <div class="dungeon-room active" data-room="0">
+              <div class="dungeon-circle">1</div>
+              <span class="dungeon-label">Gate</span>
+            </div>
+            <div class="dungeon-path" data-path="0"></div>
+            <div class="dungeon-room" data-room="1">
+              <div class="dungeon-circle">2</div>
+              <span class="dungeon-label">Vault</span>
+            </div>
+            <div class="dungeon-path" data-path="1"></div>
+            <div class="dungeon-room" data-room="2">
+              <div class="dungeon-circle">3</div>
+              <span class="dungeon-label">Forge</span>
+            </div>
+            <div class="dungeon-path" data-path="2"></div>
+            <div class="dungeon-room" data-room="3">
+              <div class="dungeon-circle">4</div>
+              <span class="dungeon-label">Enchant</span>
+            </div>
+            <div class="dungeon-path" data-path="3"></div>
+            <div class="dungeon-room" data-room="4">
+              <div class="dungeon-circle">5</div>
+              <span class="dungeon-label">Claim</span>
+            </div>
+          </div>
+
+          <div class="progress-bar-wrap">
+            <div class="progress-bar" id="progress-bar"></div>
+          </div>
+          <p class="progress-percent" id="progress-percent">0% XP</p>
+          <p class="progress-status" id="progress-status">Please wait while we connect to the servers.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== STEP 5: VERIFICATION (LOCKER) ====== -->
+    <section class="step step-verify" id="step-verify">
+      <div class="container">
+        <div class="verify-card game-panel">
+          <!-- Spinning aura logo -->
+          <div class="verify-logo-wrap">
+            <img src="img/logo-h.webp" alt="" class="verify-logo" width="72" height="88">
+          </div>
+          <h2 class="step-title">Quest Complete: Claim Your Reward</h2>
+          <p class="step-desc">Complete a quick verification to confirm you're human and unlock your game key.</p>
+
+          <!-- Reward loot box -->
+          <div class="loot-box" id="loot-box">
+            <div class="loot-item loot-legendary"><span class="loot-star">&#9733;</span> <span id="loot-edition">Hytale Standard Edition Key</span></div>
+            <div class="loot-item loot-epic"><span class="loot-star">&#9733;</span> Lifetime Online Access</div>
+            <div class="loot-item loot-common"><span class="loot-star">&#9733;</span> All Edition Bonuses</div>
+          </div>
+
+          <button class="btn btn-primary btn-lg btn-pulse" id="btn-verify">
+            <svg class="btn-icon" viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zM12 17c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1s3.1 1.39 3.1 3.1v2z"/></svg>
+            Unlock Reward
+          </button>
+          <p class="verify-note">This usually takes less than 60 seconds.</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ====== LOCKER MODAL ====== -->
+  <div class="modal-overlay" id="locker-modal" role="dialog" aria-modal="true" aria-label="Verification">
+    <div class="modal-content">
+      <button class="modal-close" id="modal-close" aria-label="Close verification">
+        <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+      </button>
+      <iframe id="locker-iframe" title="Verification" allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <!-- ====== FOOTER ====== -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 Hytale Key Generator. This site is not affiliated with Hypixel Studios.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
